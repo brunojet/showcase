@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class AppListComponent implements OnInit {
   @Output() appSelected = new EventEmitter<any>();
+  tmp: any;
 
   apps = [
     { name: 'GourmetGuide', category: 'Alimentação' },
@@ -29,13 +30,21 @@ export class AppListComponent implements OnInit {
     { name: 'EventExpert', category: 'Eventos' },
   ];
 
+  selectedApp: any = null;
+
   ngOnInit() {
     if (this.apps.length > 0) {
       this.selectApp(this.apps[0]);
+      console.log('Selected app on init:', this.selectedApp);
     }
   }
 
   selectApp(app: any) {
+    this.selectedApp = app;
     this.appSelected.emit(app);
+  }
+
+  isSelected(app: any): boolean {
+    return this.selectedApp === app;
   }
 }

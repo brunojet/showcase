@@ -1,17 +1,34 @@
-.app-list {
-    height: 100%; /* Ajuste conforme necessário */
-    overflow-y: auto;
-    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 10px;
+.app-list-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Garante que o contêiner seja invisível */
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para um visual mais agradável */
     box-sizing: border-box;
-    width: 100%; /* Garante que a lista ocupe toda a largura disponível */
+    border: 1px solid #e0e0e0; /* Adiciona a borda visível */
+    border-radius: 10px;
+}
+
+.app-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 80%; /* Ajuste conforme necessário para ser menor que o contêiner */
+    width: 90%; /* Ajuste conforme necessário para ser menor que o contêiner */
+    overflow-y: auto;
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+    padding: 20px 10px; /* Adiciona padding superior e inferior */
+    scroll-snap-type: y mandatory; /* Adiciona o comportamento de snap */
 }
 
 .app-item {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
     padding: 10px;
     margin: 5px 0;
     background-color: #f9f9f9;
@@ -19,10 +36,16 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
-    min-width: 80px; /* Ajuste conforme necessário */
+    width: 90%; /* Garante que o item ocupe toda a largura do contêiner */
+    scroll-snap-align: center; /* Alinha o item ao centro do contêiner */
+    text-align: center; /* Centraliza o texto */
 }
 
 .app-item:hover {
     background-color: #f0f0f0;
     border-color: #bbb;
+}
+
+.app-item.selected {
+    border-color: orange;
 }

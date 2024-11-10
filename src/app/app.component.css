@@ -22,6 +22,7 @@
     width: 200px; /* Tamanho fixo de 200 pixels */
     max-height: 400px;
     flex-shrink: 0; /* Garante que a lista não encolha */
+    box-sizing: border-box;
 }
 
 .app-details-container {
