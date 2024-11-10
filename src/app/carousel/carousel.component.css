@@ -1,0 +1,71 @@
+/* CSS do carousel-container */
+.carousel-container {
+    display: flex;
+    width: 100%; /* Garante que o content ocupe toda a largura do container */
+    margin-top: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: hidden; 
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden; */
+}
+
+/* CSS do carousel-wrapper */
+.carousel-wrapper {
+    overflow: hidden;
+    width: 90%; /* Ajuste a largura para 90% */
+    position: relative; /* Adicione position relative para posicionar as setas */
+    margin: 0 auto; /* Centraliza o wrapper */
+}
+
+/* CSS do carousel */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+/* CSS do carousel-item */
+.carousel-item {
+    flex: 0 0 200px;
+    height: 200px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* CSS para as setas de navegação */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    display: none; /* Inicialmente escondido */
+}
+
+.carousel-nav.left {
+    left: 0px; /* Ajuste a posição para fora do container */
+}
+
+.carousel-nav.right {
+    right: 0px; /* Ajuste a posição para fora do container */
+}

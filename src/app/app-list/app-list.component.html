@@ -1,0 +1,5 @@
+<div class="app-list">
+    <div *ngFor="let app of apps" class="app-item" (click)="selectApp(app)">
+        {{ app.name }}
+    </div>
+</div>

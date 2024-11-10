@@ -1,0 +1,28 @@
+.app-list {
+    max-height: 300px; /* Ajuste conforme necessário */
+    overflow-y: auto;
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para um visual mais agradável */
+    box-sizing: border-box;
+    width: 100%; /* Garante que a lista ocupe toda a largura disponível */
+}
+
+.app-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    min-width: 80px; /* Ajuste conforme necessário */
+}
+
+.app-item:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
