@@ -1,5 +1,5 @@
 .app-list {
-    max-height: 300px; /* Ajuste conforme necessário */
+    height: 100%; /* Ajuste conforme necessário */
     overflow-y: auto;
     overflow-x: hidden; /* Remove a barra de rolagem horizontal */
     border: 1px solid #e0e0e0;

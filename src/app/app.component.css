@@ -20,11 +20,13 @@
 
 .app-list-container {
     width: 200px; /* Tamanho fixo de 200 pixels */
+    max-height: 400px;
     flex-shrink: 0; /* Garante que a lista não encolha */
 }
 
 .app-details-container {
     flex: 1; /* Consome o espaço restante */
     margin-left: 10px; /* Espaçamento entre a lista e os detalhes */
+    max-height: 400px;
     box-sizing: border-box;
 }

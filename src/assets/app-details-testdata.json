@@ -1,0 +1,77 @@
+{
+  "GourmetGuide": {
+    "category": "Alimentação",
+    "painPoints": "A falta de avaliações confiáveis de restaurantes torna difícil escolher onde comer.",
+    "valueProposition": "Oferecemos avaliações detalhadas e confiáveis de restaurantes para ajudar os usuários a fazer escolhas informadas."
+  },
+  "TripPlanner": {
+    "category": "Turismo",
+    "painPoints": "Planejar itinerários de viagem é complicado e demorado.",
+    "valueProposition": "Fornecemos ferramentas de planejamento de itinerários que simplificam o processo e economizam tempo."
+  },
+  "CarCare": {
+    "category": "Veículos",
+    "painPoints": "Manter um registro de manutenção do veículo é difícil e confuso.",
+    "valueProposition": "Oferecemos um sistema de registro de manutenção fácil de usar que ajuda os usuários a manter seus veículos em bom estado."
+  },
+  "StyleSeeker": {
+    "category": "Vestuário",
+    "painPoints": "Encontrar roupas de marcas específicas pode ser difícil.",
+    "valueProposition": "Oferecemos uma plataforma que facilita a busca por roupas de marcas específicas."
+  },
+  "GadgetGuru": {
+    "category": "Tecnologia",
+    "painPoints": "A falta de informações sobre novos lançamentos de produtos eletrônicos.",
+    "valueProposition": "Fornecemos atualizações e informações detalhadas sobre novos lançamentos de produtos eletrônicos."
+  },
+  "HealthyEats": {
+    "category": "Alimentação",
+    "painPoints": "Dificuldade em encontrar opções de alimentação saudável e equilibrada.",
+    "valueProposition": "Oferecemos recomendações de restaurantes e receitas focadas em alimentação saudável e equilibrada."
+  },
+  "Wanderlust": {
+    "category": "Turismo",
+    "painPoints": "Falta de informações sobre atividades e atrações locais.",
+    "valueProposition": "Fornecemos guias detalhados sobre atividades e atrações locais para enriquecer a experiência de viagem."
+  },
+  "RideShare": {
+    "category": "Veículos",
+    "painPoints": "Dificuldade em encontrar opções de carona confiáveis e seguras.",
+    "valueProposition": "Conectamos usuários a opções de carona confiáveis e seguras, facilitando o compartilhamento de viagens."
+  },
+  "TrendTracker": {
+    "category": "Vestuário",
+    "painPoints": "Manter-se atualizado com as últimas tendências de moda pode ser desafiador.",
+    "valueProposition": "Oferecemos atualizações e recomendações sobre as últimas tendências de moda."
+  },
+  "SmartHome": {
+    "category": "Tecnologia",
+    "painPoints": "Dificuldade em integrar e controlar dispositivos domésticos inteligentes.",
+    "valueProposition": "Fornecemos uma plataforma que facilita a integração e o controle de dispositivos domésticos inteligentes."
+  },
+  "FitnessFreak": {
+    "category": "Saúde",
+    "painPoints": "Dificuldade em encontrar rotinas de exercícios personalizadas.",
+    "valueProposition": "Oferecemos planos de exercícios personalizados para ajudar os usuários a atingir seus objetivos de fitness."
+  },
+  "PetPal": {
+    "category": "Animais de Estimação",
+    "painPoints": "Encontrar serviços confiáveis para animais de estimação pode ser complicado.",
+    "valueProposition": "Conectamos usuários a serviços confiáveis para animais de estimação, como veterinários e cuidadores."
+  },
+  "EduMaster": {
+    "category": "Educação",
+    "painPoints": "Acesso limitado a recursos educacionais de qualidade.",
+    "valueProposition": "Fornecemos uma plataforma com recursos educacionais de alta qualidade para estudantes de todas as idades."
+  },
+  "FinanceFriend": {
+    "category": "Finanças",
+    "painPoints": "Gerenciar finanças pessoais pode ser confuso e estressante.",
+    "valueProposition": "Oferecemos ferramentas e conselhos para ajudar os usuários a gerenciar suas finanças pessoais de forma eficaz."
+  },
+  "EventExpert": {
+    "category": "Eventos",
+    "painPoints": "Organizar eventos pode ser complexo e demorado.",
+    "valueProposition": "Fornecemos ferramentas e serviços para ajudar na organização e gestão de eventos de forma eficiente."
+  }
+}

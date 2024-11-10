@@ -6,8 +6,12 @@
         </svg>
         <div class="app-info">
             <h2>{{ selectedApp.name }}</h2>
-            <p class="app-pain-points">{{ appDetails.painPoints }}</p>
-            <p class="app-value-proposition">{{ appDetails.valueProposition }}</p>
+            <br>
+            <p class="app-pain-points"><strong>Dores Tratadas:</strong></p>
+            <p class="app-pain-points">{{ selectedApp.painPoints }}</p>
+            <br>
+            <p class="app-value-proposition"><strong>Proposta de Valor:</strong></p>
+            <p class="app-value-proposition">{{ selectedApp.valueProposition }}</p>
         </div>
     </div>
 </div>

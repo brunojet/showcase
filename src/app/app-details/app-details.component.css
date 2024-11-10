@@ -5,12 +5,14 @@
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%; /* Garante que os detalhes ocupem toda a largura disponível */
+    height: 100%;
     box-sizing: border-box;
 }
 
 .app-header {
     display: flex;
     align-items: flex-start;
+    height: 100%; /* Ajuste conforme necessário */
 }
 
 .app-icon {

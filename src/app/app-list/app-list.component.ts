@@ -6,24 +6,27 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   templateUrl: './app-list.component.html',
   styleUrls: ['./app-list.component.css'],
-  imports: [CommonModule]
+  imports: [CommonModule],
 })
 export class AppListComponent implements OnInit {
   @Output() appSelected = new EventEmitter<any>();
 
   apps = [
-    { name: 'App 1' },
-    { name: 'App 2' },
-    { name: 'App 3' },
-    { name: 'App 4' },
-    { name: 'App 5' },
-    { name: 'App 6' },
-    { name: 'App 7' },
-    { name: 'App 8' },
-    { name: 'App 9' },
-    { name: 'App 10' },
-    { name: 'App 11' },
-    { name: 'App 12' }
+    { name: 'GourmetGuide', category: 'Alimentação' },
+    { name: 'TripPlanner', category: 'Turismo' },
+    { name: 'CarCare', category: 'Veículos' },
+    { name: 'StyleSeeker', category: 'Vestuário' },
+    { name: 'GadgetGuru', category: 'Tecnologia' },
+    { name: 'HealthyEats', category: 'Alimentação' },
+    { name: 'Wanderlust', category: 'Turismo' },
+    { name: 'RideShare', category: 'Veículos' },
+    { name: 'TrendTracker', category: 'Vestuário' },
+    { name: 'SmartHome', category: 'Tecnologia' },
+    { name: 'FitnessFreak', category: 'Saúde' },
+    { name: 'PetPal', category: 'Animais' },
+    { name: 'EduMaster', category: 'Educação' },
+    { name: 'FinanceFriend', category: 'Finanças' },
+    { name: 'EventExpert', category: 'Eventos' },
   ];
 
   ngOnInit() {
