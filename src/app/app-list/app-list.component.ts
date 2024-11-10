@@ -35,13 +35,13 @@ export class AppListComponent implements OnInit {
   ngOnInit() {
     if (this.apps.length > 0) {
       this.selectApp(this.apps[0]);
-      console.log('Selected app on init:', this.selectedApp);
     }
   }
 
   selectApp(app: any) {
     this.selectedApp = app;
     this.appSelected.emit(app);
+    console.log('Selected app on init:', this.selectedApp);
   }
 
   isSelected(app: any): boolean {

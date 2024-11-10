@@ -4,7 +4,6 @@
     align-items: center; /* Centraliza verticalmente */
     height: 100%;
     width: 100%;
-    overflow: hidden; /* Garante que o contêiner seja invisível */
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para um visual mais agradável */
     box-sizing: border-box;
@@ -15,13 +14,12 @@
 .app-list {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza verticalmente */
     align-items: center; /* Centraliza horizontalmente */
-    height: 80%; /* Ajuste conforme necessário para ser menor que o contêiner */
+    height: 70%; /* Ajuste conforme necessário para ser menor que o contêiner */
     width: 90%; /* Ajuste conforme necessário para ser menor que o contêiner */
     overflow-y: auto;
     overflow-x: hidden; /* Remove a barra de rolagem horizontal */
-    padding: 20px 10px; /* Adiciona padding superior e inferior */
+    padding: 33px 10px; /* Adiciona padding superior e inferior */
     scroll-snap-type: y mandatory; /* Adiciona o comportamento de snap */
 }
 
@@ -37,7 +35,7 @@
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
     width: 90%; /* Garante que o item ocupe toda a largura do contêiner */
-    scroll-snap-align: center; /* Alinha o item ao centro do contêiner */
+    scroll-snap-align: start; /* Alinha o item ao início do contêiner */
     text-align: center; /* Centraliza o texto */
 }
 
@@ -45,7 +43,6 @@
     background-color: #f0f0f0;
     border-color: #bbb;
 }
-
 .app-item.selected {
     border-color: orange;
 }
