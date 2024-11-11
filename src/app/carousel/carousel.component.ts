@@ -1,8 +1,9 @@
 import {
   Component,
-  AfterViewInit,
+  OnInit,
   HostListener,
   ElementRef,
+  ChangeDetectorRef
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomUtils } from '../utils/dom-utils';
@@ -14,7 +15,7 @@ import { DomUtils } from '../utils/dom-utils';
   styleUrls: ['./carousel.component.css'],
   imports: [CommonModule],
 })
-export class CarouselComponent implements AfterViewInit {
+export class CarouselComponent implements OnInit {
   items = [
     'Item 1',
     'Item 2',
@@ -32,10 +33,10 @@ export class CarouselComponent implements AfterViewInit {
 
   constructor(private el: ElementRef) {}
 
-  ngAfterViewInit() {
-    this.selectItem(0);
+  ngOnInit() {
     this.syncCarouselWidth();
     this.updateNavVisibility();
+    this.selectItem(0);
   }
 
   @HostListener('window:resize', ['$event'])
