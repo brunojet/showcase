@@ -9,6 +9,7 @@
     border: 1px solid #e0e0e0; /* Adiciona a borda visível */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Adiciona posição relativa para posicionar as setas */
 }
 
 .carousel-wrapper {
@@ -16,8 +17,9 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    width: 90%;
+    width: calc(100% - 60px); /* Ajusta a largura para considerar o espaço das setas */
     margin: 0 auto;
+    padding: 0 30px; /* Adiciona padding para o espaço das setas */
 }
 
 /* CSS do carousel */
@@ -44,20 +46,24 @@
     text-align: center;
 }
 
+/* CSS para as setas de navegação */
 .carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
     z-index: 1;
-    display: none;
+    display: block; /* Exibe as setas */
 }
 
 .carousel-nav.left {
-    margin-right: 10px;
+    left: 0px; /* Ajuste a posição para alinhar com os itens */
 }
 
 .carousel-nav.right {
-    margin-left: 10px;
+    right: 0px; /* Ajuste a posição para alinhar com os itens */
 }

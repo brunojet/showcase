@@ -8,7 +8,6 @@
     width: 100%; /* Ajuste a largura para 100% */
     max-width: 1000px;
     margin: 0 auto; /* Centraliza o container */
-    border: 2px solid red; /* Adiciona uma linha vermelha ao redor do container */
 }
 
 .content {
