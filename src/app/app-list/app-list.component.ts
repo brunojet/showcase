@@ -41,7 +41,6 @@ export class AppListComponent implements OnInit {
   selectApp(app: any) {
     this.selectedApp = app;
     this.appSelected.emit(app);
-    console.log('Selected app on init:', this.selectedApp);
   }
 
   isSelected(app: any): boolean {

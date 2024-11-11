@@ -12,7 +12,10 @@ export class DomUtils {
    * @param element - O elemento cuja largura será ajustada.
    * @param parentSelector - (Opcional) O seletor do elemento pai.
    */
-  static syncWithParentWidth(element: HTMLElement, parentSelector?: string): void {
+  static syncWithParentWidth(
+    element: HTMLElement,
+    parentSelector?: string
+  ): void {
     // Assert que o elemento não é nulo
     customAssert(element, 'Element cannot be null or undefined.');
 
@@ -21,20 +24,13 @@ export class DomUtils {
       : element.parentElement;
 
     // Assert que o elemento pai não é nulo
-    customAssert(parent, `Parent element not found for selector: ${parentSelector || 'parentElement'}`);
-
-    console.log(`Parent dimensions: width=${parent.clientWidth}, height=${parent.clientHeight}`);
-    if (parent instanceof HTMLElement) {
-      console.log(`Parent offsetWidth: ${parent.offsetWidth}, scrollWidth: ${parent.scrollWidth}`);
-    }
-    console.log(`Element dimensions: width=${element.clientWidth}, height=${element.clientHeight}`);
-    console.log(`Parent offsetWidth: ${element.offsetWidth}, scrollWidth: ${element.scrollWidth}`);
-
+    customAssert(
+      parent,
+      `Parent element not found for selector: ${
+        parentSelector || 'parentElement'
+      }`
+    );
 
     element.style.width = `${parent.clientWidth}px`;
-
-    console.log(`After Element dimensions: width=${element.clientWidth}, height=${element.clientHeight}`);
-    console.log(`After Parent offsetWidth: ${element.offsetWidth}, scrollWidth: ${element.scrollWidth}`);
-
   }
 }
