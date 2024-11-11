@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div class="container">
   <div class="content">
-    <app-carousel></app-carousel>
+    <app-carousel [categories]="categories" (getCategories)="onGetCategories()"></app-carousel>
   </div>
   <div class="content">
     <div class="app-list-container">

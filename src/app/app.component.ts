@@ -23,10 +23,10 @@ import { AppStepsComponent } from './app-steps/app-steps.component';
 export class AppComponent {
   title = 'showcase';
   selectedApp: any;
+  categories: string[] = [];
 
-  handleAppDetailsRequest(app: any): void {
-    const appName = app?.name;
-    fetch('assets/app-details-testdata.json')
+  fetchData(url: string, callback: (data: any) => void): void {
+    fetch(url)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -34,18 +34,28 @@ export class AppComponent {
         return response.json();
       })
       .then((data) => {
-        const appDetails = data[appName];
-        if (appDetails) {
-          const selectedApp = { ...app, ...appDetails };
-          this.selectedApp = selectedApp;
-        }
+        callback(data);
       })
       .catch((error) => {
-        console.error('Error fetching app details:', error);
+        console.error('Error fetching data:', error);
       });
   }
 
   onAppSelected(app: any) {
-    this.handleAppDetailsRequest(app);
+    const appName = app?.name;
+    this.fetchData('assets/app-details-testdata.json', (data) => {
+      const appDetails = data[appName];
+      if (appDetails) {
+        this.selectedApp = { ...app, ...appDetails };
+      }
+    });
+  }
+
+  onGetCategories(): void {
+    this.fetchData('assets/app-categories.json', (data) => {
+      if (data?.categories) {
+        this.categories = data.categories;
+      }
+    });
   }
 }

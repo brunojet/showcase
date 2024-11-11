@@ -3,7 +3,9 @@ import {
   OnInit,
   HostListener,
   ElementRef,
-  ChangeDetectorRef
+  EventEmitter,
+  Input,
+  Output,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomUtils } from '../utils/dom-utils';
@@ -16,27 +18,26 @@ import { DomUtils } from '../utils/dom-utils';
   imports: [CommonModule],
 })
 export class CarouselComponent implements OnInit {
-  items = [
-    'Item 1',
-    'Item 2',
-    'Item 3',
-    'Item 4',
-    'Item 5',
-    'Item 6',
-    'Item 7',
-    'Item 8',
-    'Item 9',
-    'Item 10',
-  ];
+  constructor(private el: ElementRef) {}
+
+  @Input()
+  set categories(categories: string[]) {
+    if (categories && categories.length > 0) {
+      this.items = categories;
+      this.selectItem(0);
+    }
+  }
+
+  @Output() getCategories = new EventEmitter<any>();
+
+  items: string[] = [];
 
   selectedItemIndex: number | null = null;
-
-  constructor(private el: ElementRef) {}
 
   ngOnInit() {
     this.syncCarouselWidth();
     this.updateNavVisibility();
-    this.selectItem(0);
+    this.getCategories.emit();
   }
 
   @HostListener('window:resize', ['$event'])
@@ -72,7 +73,6 @@ export class CarouselComponent implements OnInit {
       rightNav.style.display =
         isOverflowing && !isScrolledToEnd ? 'block' : 'none';
 
-      // Adjust button positions to avoid being cut off
       const viewportWidth = window.innerWidth;
       leftNav.style.left =
         Math.max(leftNav.getBoundingClientRect().left, 0) + 'px';
