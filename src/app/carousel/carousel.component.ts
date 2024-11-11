@@ -28,9 +28,12 @@ export class CarouselComponent implements AfterViewInit {
     'Item 10',
   ];
 
+  selectedItemIndex: number | null = null;
+
   constructor(private el: ElementRef) {}
 
   ngAfterViewInit() {
+    this.selectItem(0);
     this.syncCarouselWidth();
     this.updateNavVisibility();
   }
@@ -115,5 +118,13 @@ export class CarouselComponent implements AfterViewInit {
         setTimeout(() => this.updateNavVisibility(), 500);
       }
     }
+  }
+
+  selectItem(index: number) {
+    this.selectedItemIndex = index;
+  }
+
+  isSelected(index: number): boolean {
+    return this.selectedItemIndex === index;
   }
 }

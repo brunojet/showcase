@@ -1,69 +1,80 @@
 .carousel-container {
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    margin-top: 20px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    overflow: hidden; 
-    border: 1px solid #e0e0e0; /* Adiciona a borda visível */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative; /* Adiciona posição relativa para posicionar as setas */
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .carousel-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    width: calc(100% - 60px); /* Ajusta a largura para considerar o espaço das setas */
-    margin: 0 auto;
-    padding: 0 30px; /* Adiciona padding para o espaço das setas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: calc(
+    100% - 60px
+  );
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 /* CSS do carousel */
 .carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    width: 100%;
-    padding: 10px 0;
-    box-sizing: border-box;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
 }
 
-/* CSS do carousel-item */
 .carousel-item {
-    flex: 0 0 200px;
-    height: 200px;
-    margin-right: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  flex: 0 0 200px;
+  height: 200px;
+  margin-right: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
-/* CSS para as setas de navegação */
+.carousel-item:hover {
+  background-color: #f0f0f0;
+  border-color: #bbb;
+}
+
+.carousel-item.selected {
+  border-color: orange;
+}
+
 .carousel-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
-    display: block; /* Exibe as setas */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  display: block; /* Exibe as setas */
 }
 
 .carousel-nav.left {
-    left: 0px; /* Ajuste a posição para alinhar com os itens */
+  left: 0px;
 }
 
 .carousel-nav.right {
-    right: 0px; /* Ajuste a posição para alinhar com os itens */
+  right: 0px;
 }

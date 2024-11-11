@@ -2,7 +2,8 @@
     <div class="carousel-wrapper">
         <button class="carousel-nav left" (click)="scrollLeft()">‹</button>
         <div class="carousel">
-            <div *ngFor="let item of items" class="carousel-item">
+            <div *ngFor="let item of items; let i = index" class="carousel-item" [class.selected]="isSelected(i)"
+                (click)="selectItem(i)">
                 {{ item }}
             </div>
         </div>
