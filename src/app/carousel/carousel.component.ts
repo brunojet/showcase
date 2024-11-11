@@ -46,7 +46,7 @@ export class CarouselComponent implements AfterViewInit {
       '.carousel-container'
     );
     if (carouselContainer) {
-      DomUtils.syncWithParentWidth(carouselContainer, '.container');
+      DomUtils.syncWithParentWidth(carouselContainer, '.content');
     }
   }
 

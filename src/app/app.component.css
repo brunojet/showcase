@@ -6,28 +6,32 @@
     padding: 20px;
     box-sizing: border-box;
     width: 100%; /* Ajuste a largura para 100% */
-    max-width: 1200px; /* Definindo um tamanho máximo */
+    max-width: 1000px;
     margin: 0 auto; /* Centraliza o container */
-    border: 2px solid red; /* Borda vermelha para visualização */
+    border: 2px solid red; /* Adiciona uma linha vermelha ao redor do container */
 }
 
 .content {
     display: flex;
     width: 100%; /* Garante que o content ocupe toda a largura do container */
+    max-width: 1200px;
     margin-top: 20px;
+    padding: 0; /* Remove padding */
     box-sizing: border-box;
+    border: 1px solid #e0e0e0; /* Adiciona a borda visível */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .app-list-container {
     width: 200px; /* Tamanho fixo de 200 pixels */
     max-height: 400px;
     flex-shrink: 0; /* Garante que a lista não encolha */
-    box-sizing: border-box;
 }
 
 .app-details-container {
     flex: 1; /* Consome o espaço restante */
+    width: 200px;
     margin-left: 10px; /* Espaçamento entre a lista e os detalhes */
     max-height: 400px;
-    box-sizing: border-box;
 }

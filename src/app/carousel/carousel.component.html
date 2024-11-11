@@ -1,11 +1,11 @@
 <div class="carousel-container">
-    <button class="carousel-nav left" (click)="scrollLeft()">‹</button>
     <div class="carousel-wrapper">
+        <button class="carousel-nav left" (click)="scrollLeft()">‹</button>
         <div class="carousel">
             <div *ngFor="let item of items" class="carousel-item">
                 {{ item }}
             </div>
         </div>
+        <button class="carousel-nav right" (click)="scrollRight()">›</button>
     </div>
-    <button class="carousel-nav right" (click)="scrollRight()">›</button>
 </div>
