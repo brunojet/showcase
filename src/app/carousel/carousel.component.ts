@@ -1,12 +1,4 @@
-import {
-  Component,
-  OnInit,
-  HostListener,
-  ElementRef,
-  EventEmitter,
-  Input,
-  Output,
-} from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomUtils } from '../utils/dom-utils';
 import { SelectableListComponent } from '../base/selectable-list-component';
@@ -18,8 +10,10 @@ import { SelectableListComponent } from '../base/selectable-list-component';
   styleUrls: ['./carousel.component.css'],
   imports: [CommonModule],
 })
-export class CarouselComponent extends SelectableListComponent<string> implements OnInit {
-
+export class CarouselComponent
+  extends SelectableListComponent<string>
+  implements OnInit
+{
   ngOnInit() {
     this.syncCarouselWidth();
     this.updateNavVisibility();
