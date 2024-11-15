@@ -65,7 +65,9 @@ export class AppComponent implements OnInit {
   onAppSelected(appName: any) {
     this.fetchData('assets/app-testdata.json', (data) => {
       for (const category in data) {
-        const appDetails = data[category].find((app: { name: string }) => app.name === appName);
+        const appDetails = data[category].find(
+          (app: { name: string }) => app.name === appName
+        );
         if (appDetails) {
           this.selectedApp = { ...appDetails };
           break;
