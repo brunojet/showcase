@@ -9,6 +9,7 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomUtils } from '../utils/dom-utils';
+import { SelectableListComponent } from '../base/selectable-list-component';
 
 @Component({
   selector: 'app-carousel',
@@ -17,23 +18,7 @@ import { DomUtils } from '../utils/dom-utils';
   styleUrls: ['./carousel.component.css'],
   imports: [CommonModule],
 })
-export class CarouselComponent implements OnInit {
-  constructor(private el: ElementRef) {}
-
-  /* Wrapper necessary to automatically select the first item in the app list */
-  @Input()
-  set categories(categories: string[]) {
-    if (categories && categories.length > 0) {
-      this.items = categories;
-      this.selectItem(0);
-    }
-  }
-
-  @Output() selectedCategory = new EventEmitter<any>();
-
-  items: string[] = [];
-
-  selectedItemIndex: number | null = null;
+export class CarouselComponent extends SelectableListComponent<string> implements OnInit {
 
   ngOnInit() {
     this.syncCarouselWidth();
@@ -119,14 +104,5 @@ export class CarouselComponent implements OnInit {
         setTimeout(() => this.updateNavVisibility(), 500);
       }
     }
-  }
-
-  selectItem(index: number) {
-    this.selectedItemIndex = index;
-    this.selectedCategory.emit(this.items[index]);
-  }
-
-  isSelected(index: number): boolean {
-    return this.selectedItemIndex === index;
   }
 }
