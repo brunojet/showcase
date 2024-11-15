@@ -1,0 +1,297 @@
+{
+  "Alimentação": [
+    {
+      "name": "GourmetGuide",
+      "painPoints": "A falta de avaliações confiáveis de restaurantes torna difícil escolher onde comer.",
+      "valueProposition": "Oferecemos avaliações detalhadas e confiáveis de restaurantes para ajudar os usuários a fazer escolhas informadas."
+    },
+    {
+      "name": "HealthyEats",
+      "painPoints": "Dificuldade em encontrar opções de alimentação saudável e equilibrada.",
+      "valueProposition": "Oferecemos recomendações de restaurantes e receitas focadas em alimentação saudável e equilibrada."
+    },
+    {
+      "name": "FoodieFinder",
+      "painPoints": "Dificuldade em encontrar novos restaurantes para experimentar.",
+      "valueProposition": "Oferecemos uma plataforma que ajuda os usuários a descobrir novos restaurantes com base em suas preferências."
+    },
+    {
+      "name": "MealPrepMaster",
+      "painPoints": "Planejar refeições semanais pode ser demorado e complicado.",
+      "valueProposition": "Fornecemos planos de refeições semanais personalizados para facilitar o planejamento de refeições."
+    },
+    {
+      "name": "SnackTracker",
+      "painPoints": "Dificuldade em encontrar lanches saudáveis e saborosos.",
+      "valueProposition": "Oferecemos recomendações de lanches saudáveis e saborosos para diferentes necessidades dietéticas."
+    },
+    {
+      "name": "RecipeRescue",
+      "painPoints": "Encontrar receitas que atendam a restrições alimentares específicas pode ser difícil.",
+      "valueProposition": "Fornecemos uma vasta coleção de receitas que atendem a diversas restrições alimentares."
+    },
+    {
+      "name": "DineOutDeals",
+      "painPoints": "Encontrar ofertas e descontos em restaurantes pode ser desafiador.",
+      "valueProposition": "Oferecemos uma plataforma que agrega ofertas e descontos em restaurantes locais."
+    },
+    {
+      "name": "ChefAtHome",
+      "painPoints": "Dificuldade em cozinhar refeições gourmet em casa.",
+      "valueProposition": "Fornecemos receitas e tutoriais detalhados para ajudar os usuários a cozinhar refeições gourmet em casa."
+    },
+    {
+      "name": "VeganVoyage",
+      "painPoints": "Encontrar opções veganas em restaurantes pode ser complicado.",
+      "valueProposition": "Oferecemos recomendações de restaurantes e pratos veganos para facilitar a escolha dos usuários."
+    },
+    {
+      "name": "FoodAllergyFinder",
+      "painPoints": "Dificuldade em encontrar restaurantes que atendam a alergias alimentares.",
+      "valueProposition": "Fornecemos uma plataforma que ajuda os usuários a encontrar restaurantes que atendem a diversas alergias alimentares."
+    },
+    {
+      "name": "FarmToTable",
+      "painPoints": "Dificuldade em encontrar alimentos frescos e locais.",
+      "valueProposition": "Conectamos usuários a mercados e produtores locais que oferecem alimentos frescos e de alta qualidade."
+    },
+    {
+      "name": "DinnerPartyPlanner",
+      "painPoints": "Planejar e organizar jantares pode ser estressante.",
+      "valueProposition": "Fornecemos ferramentas e dicas para ajudar os usuários a planejar e organizar jantares de forma eficiente."
+    }
+  ],
+  "Turismo": [
+    {
+      "name": "TripPlanner",
+      "painPoints": "Planejar itinerários de viagem é complicado e demorado.",
+      "valueProposition": "Fornecemos ferramentas de planejamento de itinerários que simplificam o processo e economizam tempo."
+    },
+    {
+      "name": "Wanderlust",
+      "painPoints": "Falta de informações sobre atividades e atrações locais.",
+      "valueProposition": "Fornecemos guias detalhados sobre atividades e atrações locais para enriquecer a experiência de viagem."
+    },
+    {
+      "name": "AdventureAwaits",
+      "painPoints": "Dificuldade em encontrar atividades de aventura em destinos de viagem.",
+      "valueProposition": "Oferecemos recomendações de atividades de aventura em diversos destinos de viagem."
+    },
+    {
+      "name": "CulturalExplorer",
+      "painPoints": "Falta de informações sobre a cultura local dos destinos de viagem.",
+      "valueProposition": "Fornecemos guias culturais detalhados para enriquecer a experiência de viagem dos usuários."
+    },
+    {
+      "name": "TravelBuddy",
+      "painPoints": "Viajar sozinho pode ser solitário e inseguro.",
+      "valueProposition": "Conectamos viajantes solo com companheiros de viagem compatíveis para tornar a viagem mais segura e divertida."
+    },
+    {
+      "name": "EcoTraveler",
+      "painPoints": "Dificuldade em encontrar opções de viagem sustentáveis.",
+      "valueProposition": "Oferecemos recomendações de viagens e acomodações sustentáveis para viajantes conscientes."
+    },
+    {
+      "name": "LuxuryGetaways",
+      "painPoints": "Encontrar opções de viagem de luxo pode ser desafiador.",
+      "valueProposition": "Oferecemos recomendações de destinos e acomodações de luxo para viajantes exigentes."
+    },
+    {
+      "name": "BackpackerGuide",
+      "painPoints": "Planejar viagens econômicas pode ser complicado.",
+      "valueProposition": "Fornecemos dicas e guias para ajudar mochileiros a planejar viagens econômicas."
+    },
+    {
+      "name": "FamilyTrips",
+      "painPoints": "Planejar viagens em família pode ser estressante.",
+      "valueProposition": "Oferecemos recomendações e dicas para facilitar o planejamento de viagens em família."
+    },
+    {
+      "name": "PetFriendlyTravel",
+      "painPoints": "Encontrar acomodações e atividades que aceitam animais de estimação pode ser difícil.",
+      "valueProposition": "Fornecemos recomendações de acomodações e atividades que aceitam animais de estimação."
+    },
+    {
+      "name": "HistoricalJourneys",
+      "painPoints": "Falta de informações sobre locais históricos em destinos de viagem.",
+      "valueProposition": "Oferecemos guias detalhados sobre locais históricos para enriquecer a experiência de viagem."
+    },
+    {
+      "name": "SoloTravel",
+      "painPoints": "Planejar viagens solo pode ser intimidador.",
+      "valueProposition": "Fornecemos dicas e guias para ajudar viajantes solo a planejar suas viagens com confiança."
+    }
+  ],
+  "Veículos": [
+    {
+      "name": "CarCare",
+      "painPoints": "Manter um registro de manutenção do veículo é difícil e confuso.",
+      "valueProposition": "Oferecemos um sistema de registro de manutenção fácil de usar que ajuda os usuários a manter seus veículos em bom estado."
+    },
+    {
+      "name": "RideShare",
+      "painPoints": "Dificuldade em encontrar opções de carona confiáveis e seguras.",
+      "valueProposition": "Conectamos usuários a opções de carona confiáveis e seguras, facilitando o compartilhamento de viagens."
+    },
+    {
+      "name": "ElectricEase",
+      "painPoints": "Dificuldade em encontrar estações de carregamento para veículos elétricos.",
+      "valueProposition": "Oferecemos um mapa interativo que mostra a localização de estações de carregamento para veículos elétricos."
+    },
+    {
+      "name": "FuelFinder",
+      "painPoints": "Encontrar postos de gasolina com os melhores preços pode ser difícil.",
+      "valueProposition": "Fornecemos uma plataforma que ajuda os usuários a encontrar postos de gasolina com os melhores preços."
+    },
+    {
+      "name": "AutoInsurance",
+      "painPoints": "Comparar opções de seguro de automóvel pode ser confuso.",
+      "valueProposition": "Oferecemos uma ferramenta de comparação de seguros de automóvel para ajudar os usuários a encontrar a melhor opção."
+    },
+    {
+      "name": "ParkingPal",
+      "painPoints": "Encontrar vagas de estacionamento disponíveis pode ser frustrante.",
+      "valueProposition": "Fornecemos um aplicativo que ajuda os usuários a encontrar vagas de estacionamento disponíveis em tempo real."
+    },
+    {
+      "name": "CarRental",
+      "painPoints": "Alugar um carro pode ser complicado e demorado.",
+      "valueProposition": "Oferecemos uma plataforma que simplifica o processo de aluguel de carros."
+    },
+    {
+      "name": "RoadsideAssist",
+      "painPoints": "Obter assistência na estrada pode ser demorado e estressante.",
+      "valueProposition": "Fornecemos um serviço de assistência na estrada rápido e confiável."
+    },
+    {
+      "name": "FleetManager",
+      "painPoints": "Gerenciar uma frota de veículos pode ser complexo.",
+      "valueProposition": "Oferecemos ferramentas para ajudar na gestão eficiente de frotas de veículos."
+    },
+    {
+      "name": "CarWashLocator",
+      "painPoints": "Encontrar um lava-jato de qualidade pode ser difícil.",
+      "valueProposition": "Fornecemos uma plataforma que ajuda os usuários a encontrar lava-jatos de qualidade."
+    },
+    {
+      "name": "AutoParts",
+      "painPoints": "Encontrar peças de reposição para veículos pode ser complicado.",
+      "valueProposition": "Oferecemos uma plataforma que facilita a busca por peças de reposição para veículos."
+    },
+    {
+      "name": "DrivingSchool",
+      "painPoints": "Encontrar uma autoescola confiável pode ser desafiador.",
+      "valueProposition": "Fornecemos uma plataforma que conecta usuários a autoescolas confiáveis."
+    }
+  ],
+  "Vestuário": [
+    {
+      "name": "StyleSeeker",
+      "painPoints": "Encontrar roupas de marcas específicas pode ser difícil.",
+      "valueProposition": "Oferecemos uma plataforma que facilita a busca por roupas de marcas específicas."
+    },
+    {
+      "name": "TrendTracker",
+      "painPoints": "Manter-se atualizado com as últimas tendências de moda pode ser desafiador.",
+      "valueProposition": "Oferecemos atualizações e recomendações sobre as últimas tendências de moda."
+    },
+    {
+      "name": "FitFinder",
+      "painPoints": "Encontrar roupas que se ajustem bem pode ser difícil.",
+      "valueProposition": "Oferecemos uma plataforma que ajuda os usuários a encontrar roupas que se ajustem perfeitamente ao seu corpo."
+    },
+    {
+      "name": "EcoFashion",
+      "painPoints": "Dificuldade em encontrar roupas sustentáveis e ecológicas.",
+      "valueProposition": "Fornecemos recomendações de marcas e produtos de moda sustentáveis e ecológicos."
+    },
+    {
+      "name": "VintageVault",
+      "painPoints": "Encontrar roupas vintage de qualidade pode ser desafiador.",
+      "valueProposition": "Oferecemos uma plataforma que conecta usuários a lojas e vendedores de roupas vintage."
+    },
+    {
+      "name": "CustomCouture",
+      "painPoints": "Dificuldade em encontrar roupas personalizadas e sob medida.",
+      "valueProposition": "Conectamos usuários a designers e alfaiates que oferecem serviços de roupas personalizadas e sob medida."
+    },
+    {
+      "name": "WardrobeWizard",
+      "painPoints": "Organizar e gerenciar o guarda-roupa pode ser complicado.",
+      "valueProposition": "Oferecemos ferramentas para ajudar os usuários a organizar e gerenciar seu guarda-roupa de forma eficiente."
+    },
+    {
+      "name": "ShoeSpotter",
+      "painPoints": "Encontrar sapatos de qualidade e confortáveis pode ser difícil.",
+      "valueProposition": "Fornecemos recomendações de sapatos de qualidade e confortáveis para diferentes ocasiões."
+    },
+    {
+      "name": "AccessoryAdvisor",
+      "painPoints": "Dificuldade em encontrar acessórios que complementem o visual.",
+      "valueProposition": "Oferecemos recomendações de acessórios que complementam diferentes estilos e visuais."
+    },
+    {
+      "name": "FashionRental",
+      "painPoints": "Comprar roupas para eventos especiais pode ser caro.",
+      "valueProposition": "Oferecemos uma plataforma de aluguel de roupas para eventos especiais, permitindo que os usuários economizem dinheiro."
+    },
+    {
+      "name": "OutfitOrganizer",
+      "painPoints": "Planejar e coordenar roupas pode ser demorado.",
+      "valueProposition": "Fornecemos ferramentas para ajudar os usuários a planejar e coordenar suas roupas de forma eficiente."
+    },
+    {
+      "name": "StyleSwap",
+      "painPoints": "Desapegar de roupas antigas pode ser difícil.",
+      "valueProposition": "Oferecemos uma plataforma para troca de roupas, permitindo que os usuários renovem seu guarda-roupa de forma sustentável."
+    }
+  ],
+  "Tecnologia": [
+    {
+      "name": "GadgetGuru",
+      "painPoints": "A falta de informações sobre novos lançamentos de produtos eletrônicos.",
+      "valueProposition": "Fornecemos atualizações e informações detalhadas sobre novos lançamentos de produtos eletrônicos."
+    },
+    {
+      "name": "SmartHome",
+      "painPoints": "Dificuldade em integrar e controlar dispositivos domésticos inteligentes.",
+      "valueProposition": "Fornecemos uma plataforma que facilita a integração e o controle de dispositivos domésticos inteligentes."
+    }
+  ],
+  "Saúde": [
+    {
+      "name": "FitnessFreak",
+      "painPoints": "Dificuldade em encontrar rotinas de exercícios personalizadas.",
+      "valueProposition": "Oferecemos planos de exercícios personalizados para ajudar os usuários a atingir seus objetivos de fitness."
+    }
+  ],
+  "Animais de Estimação": [
+    {
+      "name": "PetPal",
+      "painPoints": "Encontrar serviços confiáveis para animais de estimação pode ser complicado.",
+      "valueProposition": "Conectamos usuários a serviços confiáveis para animais de estimação, como veterinários e cuidadores."
+    }
+  ],
+  "Educação": [
+    {
+      "name": "EduMaster",
+      "painPoints": "Acesso limitado a recursos educacionais de qualidade.",
+      "valueProposition": "Fornecemos uma plataforma com recursos educacionais de alta qualidade para estudantes de todas as idades."
+    }
+  ],
+  "Finanças": [
+    {
+      "name": "FinanceFriend",
+      "painPoints": "Gerenciar finanças pessoais pode ser confuso e estressante.",
+      "valueProposition": "Oferecemos ferramentas e conselhos para ajudar os usuários a gerenciar suas finanças pessoais de forma eficaz."
+    }
+  ],
+  "Eventos": [
+    {
+      "name": "EventExpert",
+      "painPoints": "Organizar eventos pode ser complexo e demorado.",
+      "valueProposition": "Fornecemos ferramentas e serviços para ajudar na organização e gestão de eventos de forma eficiente."
+    }
+  ]
+}

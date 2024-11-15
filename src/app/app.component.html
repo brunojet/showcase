@@ -1,11 +1,11 @@
 <app-header></app-header>
 <div class="container">
   <div class="content">
-    <app-carousel [categories]="categories" (getCategories)="onGetCategories()"></app-carousel>
+    <app-carousel [categories]="categories" (selectedCategory)="onSelectedCategory($event)"></app-carousel>
   </div>
   <div class="content">
     <div class="app-list-container">
-      <app-app-list (appSelected)="onAppSelected($event)"></app-app-list>
+      <app-app-list [appList]="appList" (appSelected)="onAppSelected($event)"></app-app-list>
     </div>
     <div class="app-details-container">
       <app-app-details [selectedApp]="selectedApp"></app-app-details>

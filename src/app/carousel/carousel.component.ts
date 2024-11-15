@@ -20,6 +20,7 @@ import { DomUtils } from '../utils/dom-utils';
 export class CarouselComponent implements OnInit {
   constructor(private el: ElementRef) {}
 
+  /* Wrapper necessary to automatically select the first item in the app list */
   @Input()
   set categories(categories: string[]) {
     if (categories && categories.length > 0) {
@@ -28,7 +29,7 @@ export class CarouselComponent implements OnInit {
     }
   }
 
-  @Output() getCategories = new EventEmitter<any>();
+  @Output() selectedCategory = new EventEmitter<any>();
 
   items: string[] = [];
 
@@ -37,7 +38,6 @@ export class CarouselComponent implements OnInit {
   ngOnInit() {
     this.syncCarouselWidth();
     this.updateNavVisibility();
-    this.getCategories.emit();
   }
 
   @HostListener('window:resize', ['$event'])
@@ -123,6 +123,7 @@ export class CarouselComponent implements OnInit {
 
   selectItem(index: number) {
     this.selectedItemIndex = index;
+    this.selectedCategory.emit(this.items[index]);
   }
 
   isSelected(index: number): boolean {

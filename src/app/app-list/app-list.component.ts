@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,35 +8,25 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./app-list.component.css'],
   imports: [CommonModule],
 })
-export class AppListComponent implements OnInit {
-  @Output() appSelected = new EventEmitter<any>();
-  tmp: any;
+export class AppListComponent {
+  private _appList: any[] = [];
 
-  apps = [
-    { name: 'GourmetGuide', category: 'Alimentação' },
-    { name: 'TripPlanner', category: 'Turismo' },
-    { name: 'CarCare', category: 'Veículos' },
-    { name: 'StyleSeeker', category: 'Vestuário' },
-    { name: 'GadgetGuru', category: 'Tecnologia' },
-    { name: 'HealthyEats', category: 'Alimentação' },
-    { name: 'Wanderlust', category: 'Turismo' },
-    { name: 'RideShare', category: 'Veículos' },
-    { name: 'TrendTracker', category: 'Vestuário' },
-    { name: 'SmartHome', category: 'Tecnologia' },
-    { name: 'FitnessFreak', category: 'Saúde' },
-    { name: 'PetPal', category: 'Animais' },
-    { name: 'EduMaster', category: 'Educação' },
-    { name: 'FinanceFriend', category: 'Finanças' },
-    { name: 'EventExpert', category: 'Eventos' },
-  ];
-
-  selectedApp: any = null;
-
-  ngOnInit() {
-    if (this.apps.length > 0) {
-      this.selectApp(this.apps[0]);
+  /* Wrapper necessary to automatically select the first item in the app list */
+  @Input()
+  set appList(value: any[]) {
+    if (value && value.length > 0) {
+      this._appList = value;
+      this.selectApp(this._appList[0]);
     }
   }
+
+  get appList(): any[] {
+    return this._appList;
+  }
+
+  @Output() appSelected = new EventEmitter<any>();
+
+  selectedApp: any = null;
 
   selectApp(app: any) {
     this.selectedApp = app;

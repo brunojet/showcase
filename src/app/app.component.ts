@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -20,10 +20,14 @@ import { AppStepsComponent } from './app-steps/app-steps.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+    this.onGetCategories();
+  }
   title = 'showcase';
-  selectedApp: any;
   categories: string[] = [];
+  appList: string[] = [];
+  selectedApp: any;
 
   fetchData(url: string, callback: (data: any) => void): void {
     fetch(url)
@@ -41,20 +45,31 @@ export class AppComponent {
       });
   }
 
-  onAppSelected(app: any) {
-    const appName = app?.name;
-    this.fetchData('assets/app-details-testdata.json', (data) => {
-      const appDetails = data[appName];
-      if (appDetails) {
-        this.selectedApp = { ...app, ...appDetails };
+  onGetCategories(): void {
+    this.fetchData('assets/app-testdata.json', (data) => {
+      if (data) {
+        this.categories = Object.keys(data);
       }
     });
   }
 
-  onGetCategories(): void {
-    this.fetchData('assets/app-categories.json', (data) => {
-      if (data?.categories) {
-        this.categories = data.categories;
+  onSelectedCategory(category: any): void {
+    this.fetchData('assets/app-testdata.json', (data) => {
+      if (data && data[category]) {
+        const appList = data[category].map((app: { name: string }) => app.name);
+        this.appList = appList;
+      }
+    });
+  }
+
+  onAppSelected(appName: any) {
+    this.fetchData('assets/app-testdata.json', (data) => {
+      for (const category in data) {
+        const appDetails = data[category].find((app: { name: string }) => app.name === appName);
+        if (appDetails) {
+          this.selectedApp = { ...appDetails };
+          break;
+        }
       }
     });
   }
